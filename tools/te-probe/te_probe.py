@@ -122,7 +122,9 @@ def gql(token, query, variables=None):
     status, res = http_json(
         GRAPHQL,
         {"query": query, "variables": variables or {}},
-        headers={"Authorization": "Bearer " + token},
+        # Сырой session_token Kratos принимается в x-session-token. Authorization: Bearer ждёт
+        # JWT из /sessions/whoami?tokenize_as=long_lived_token (живёт 30 дней), он нам не нужен.
+        headers={"x-session-token": token},
     )
     if status != 200 or res.get("errors"):
         sys.exit(f"graphql: HTTP {status}: {res.get('errors') or res}")
