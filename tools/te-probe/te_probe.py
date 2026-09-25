@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Прототип эксперимента A: вход в Training Endurance и тренировки на 7 дней.
 
-Только стандартная библиотека. Учётные данные и токен лежат в secrets/ (в .gitignore):
+Только стандартная библиотека. Учётные данные — в переменных окружения TE_EMAIL / TE_PASSWORD
+или в secrets/ (папка в .gitignore):
 
     secrets/te.env           TE_EMAIL=...  и  TE_PASSWORD=...
     secrets/te-session.json  создаётся скриптом: session_token + expires_at

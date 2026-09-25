@@ -16,11 +16,13 @@
 
 ## 2026-09-25 — Эксперимент A: разбор веб-приложения
 
-- Сетевой доступ к `trainingendurance.com` и `app.trainingendurance.com` заработал.
+- Сетевой доступ к `trainingendurance.com` и `app.trainingendurance.com` заработал после повторной настройки
+  окружения (Network access → Custom, домены `trainingendurance.com` и `*.trainingendurance.com`).
 - Разобрал SPA (React + Apollo, ~110 JS-чанков). API: **GraphQL** `app.trainingendurance.com/graphql`,
   интроспекция открыта, данные без токена не отдаются.
 - Вход: **Ory Kratos**, есть нативный API-поток (`/kratos/self-service/login/api`) — логин/пароль → `session_token`
-  без cookies и CSRF. GraphQL принимает `Authorization: Bearer <token>`. Способы входа: пароль, код на почту, Google, Apple.
+  без cookies и CSRF. Способы входа: пароль, код на почту, Google, Apple. (Здесь я ошибочно решил, что токен
+  идёт в `Authorization: Bearer` — на деле в `x-session-token`, см. запись выше.)
 - Календарь: `calendarItems(p: {userID, dates: [...]})` → тренировки с `name`, `workoutType`, `plan`/`fact`
   (длительность, дистанция, ESS), `manualDone`, структура.
 - Вариант B: iCal нет, но есть интеграция **Google Calendar** («все запланированные тренировки выгружаются»).
