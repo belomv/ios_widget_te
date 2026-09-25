@@ -14,6 +14,7 @@
 | [`docs/01-data-source/options.md`](docs/01-data-source/options.md) | Все варианты получения данных, оценка каждого |
 | [`docs/01-data-source/experiments/`](docs/01-data-source/experiments/) | По файлу на каждую проверку варианта (шаблон: `_template.md`) |
 | [`docs/01-data-source/DECISION.md`](docs/01-data-source/DECISION.md) | Итог этапа: какой способ выбрали и почему |
+| [`tools/te-probe/`](tools/te-probe/) | Прототип: вход в TE и тренировки на неделю (`python3 tools/te-probe/te_probe.py`) |
 
 Следующие этапы (виджет, приложение) получат свои папки `docs/02-…`, `docs/03-…` по той же схеме:
 `options` → `experiments` → `DECISION`.

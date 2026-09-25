@@ -2,6 +2,22 @@
 
 Новые записи сверху. Формат: дата — что сделали → что узнали → что дальше.
 
+## 2026-09-25 — Эксперимент A: разбор веб-приложения
+
+- Сетевой доступ к `trainingendurance.com` и `app.trainingendurance.com` заработал.
+- Разобрал SPA (React + Apollo, ~110 JS-чанков). API: **GraphQL** `app.trainingendurance.com/graphql`,
+  интроспекция открыта, данные без токена не отдаются.
+- Вход: **Ory Kratos**, есть нативный API-поток (`/kratos/self-service/login/api`) — логин/пароль → `session_token`
+  без cookies и CSRF. GraphQL принимает `Authorization: Bearer <token>`. Способы входа: пароль, код на почту, Google, Apple.
+- Календарь: `calendarItems(p: {userID, dates: [...]})` → тренировки с `name`, `workoutType`, `plan`/`fact`
+  (длительность, дистанция, ESS), `manualDone`, структура.
+- Вариант B: iCal нет, но есть интеграция **Google Calendar** («все запланированные тренировки выгружаются»).
+- Нашёл официальный **OAuth 2.1 + MCP-сервер** (`mcp.trainingendurance.com`), но он только для PRO → вариант J в options.
+- Написал прототип [`tools/te-probe/te_probe.py`](../tools/te-probe/te_probe.py), проверил запросы на схеме.
+
+**Дальше:** логин/пароль TE в `secrets/te.env` → прогон прототипа, срок жизни сессии. Параллельно:
+включить Google Calendar в настройках TE и посмотреть, что приходит.
+
 ## 2026-09-25 — Сетевой доступ
 
 - Владелец добавил `trainingendurance.com` и `app.trainingendurance.com` в разрешённые домены окружения.
