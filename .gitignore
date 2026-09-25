@@ -1,0 +1,14 @@
+# Секреты и сырые дампы сетевых запросов
+secrets/
+*.har
+.env
+*.env
+
+# Xcode
+DerivedData/
+xcuserdata/
+*.xcuserstate
+build/
+
+# macOS
+.DS_Store
