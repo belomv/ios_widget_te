@@ -10,4 +10,4 @@
 `athlete_comment`, `uploaded` (есть загруженная тренировка), `uploaded_from` (откуда), `status`
 (`done` / `missed` / `today` / `planned`), `created_by` (`coach` / `athlete`).
 
-Сюда же кладём макеты: `docs/02-widget/mockups/`.
+Макеты — в Penpot, описание дизайна — [`../DESIGN.md`](../DESIGN.md).
