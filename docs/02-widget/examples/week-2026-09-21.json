@@ -1,0 +1,72 @@
+{
+  "week": "2026-09-21..2026-09-27",
+  "exported_at": "2026-09-25",
+  "source": "calendarItems (tools/te-probe)",
+  "items": [
+    {
+      "date": "2026-09-22",
+      "weekday": "вт",
+      "kind": "event",
+      "title": "Без первозмоганий",
+      "coach_comment": "Кросс желательно грунт\nУскорения по настроению но стараться быстро",
+      "created_by": "coach"
+    },
+    {
+      "date": "2026-09-22",
+      "weekday": "вт",
+      "kind": "workout",
+      "title": "Кросс + спринты",
+      "sport": "running",
+      "coach_comment": "50 минут кросс 2 зона по грунтам\n\n8 серий спринтов\n20 секунд быстро / через 1:40 трусцой\n\nЗаминка 10 минут",
+      "athlete_comment": null,
+      "uploaded": true,
+      "uploaded_from": [
+        "STRAVA",
+        "COROS"
+      ],
+      "status": "done",
+      "created_by": "coach"
+    },
+    {
+      "date": "2026-09-24",
+      "weekday": "чт",
+      "kind": "workout",
+      "title": "Пороговая мягкая",
+      "sport": "bike",
+      "coach_comment": "20 мин легко: 165–190 Вт\n3×10 мин — 235–250 Вт\nмежду 5 мин откатка\nзаминка 10-20 минут спокойно",
+      "athlete_comment": null,
+      "uploaded": true,
+      "uploaded_from": [
+        "STRAVA"
+      ],
+      "status": "done",
+      "created_by": "coach"
+    },
+    {
+      "date": "2026-09-26",
+      "weekday": "сб",
+      "kind": "workout",
+      "title": "ЛЫжна имитация",
+      "sport": "running",
+      "coach_comment": "Хочется чтоб ты нашел горки взял палки и пошел гулять\n\nПлан такой\n20 минут ходим спокйно 1 зона\n20 минту побыстее 2 зона\n20 минту 3 зона\n\nВсеэто выполняем на какомуто круге с подемами\nВниз не надо деражть 3 зону всегда\nзоны сморим тока в подем и по ровному ( вниз кактим как на вело ) но интенсивность не теряем\n\nПосле растяжка",
+      "athlete_comment": null,
+      "uploaded": false,
+      "uploaded_from": null,
+      "status": "planned",
+      "created_by": "coach"
+    },
+    {
+      "date": "2026-09-27",
+      "weekday": "вс",
+      "kind": "workout",
+      "title": "Вело длинная",
+      "sport": "bike",
+      "coach_comment": "60-70 км до 200вт спокойно",
+      "athlete_comment": null,
+      "uploaded": false,
+      "uploaded_from": null,
+      "status": "planned",
+      "created_by": "coach"
+    }
+  ]
+}
