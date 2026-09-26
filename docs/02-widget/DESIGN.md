@@ -188,7 +188,7 @@ SF Symbols, начертание Regular — одни и те же в макет
 | `SKI` | `figure.skiing.crosscountry` |
 | `WALK` | `figure.walk` |
 | `STRENGTH` | `figure.strengthtraining.traditional` |
-| `OTHER` | не решено (графику для «без типа» пока не рисуем) |
+| `OTHER` | `figure.mixed.cardio` (согласовано 2026-09-26; SVG ещё не выгружен) |
 
 Про запас в библиотеке: `figure.open.water.swim`, `figure.hiking`, `figure.run.treadmill`, `figure.walk.treadmill`,
 `figure.indoor.cycle`, `figure.elliptical`, `figure.stair.stepper`, `figure.strengthtraining.functional`,
