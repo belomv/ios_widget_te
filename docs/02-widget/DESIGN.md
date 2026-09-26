@@ -204,9 +204,14 @@ SF Symbols, начертание Regular — одни и те же в макет
 | `icon/…` | 16 иконок SF Symbols (см. «Иконки видов спорта») | внутри `DayCell` |
 | `WeekDay` | **Today**: no / yes (плашка `surface.secondary`, подпись `text.primary`) × **Size**: L / M. Внутри подпись дня (`widget/weekday`) и `DayCell` | внутри `WeekStrip` |
 | `WeekStrip` | **Size**: L (Large, Extra large) / M (Medium). 7 × `WeekDay` пн…вс, `space-between`. На экземпляре: у сегодняшнего дня Today = yes, у каждого `DayCell` — Status и иконка спорта | полоска недели во всех размерах, кроме Small |
+| `FocusHeader` | **Size**: L (`title-large`, Large/XL) / M (`title-medium`, Medium, «две тренировки»). Название (до 2 строк) + справа «Сегодня» / «Завтра · чт» (`eyebrow`, `accent.text`) | заголовок раскрытого дня |
+| `CoachComment` | **Size**: body 14 / compact 13 / small 12. Линия-цитата `accent.line` (плавающая, тянется по высоте текста) + текст | комментарий тренера; в Medium/Small растянут по высоте и обрезается |
+| `CoachNote` | плашка `surface.secondary`, заголовок `label` + текст `body-compact` | заметка тренера под комментарием |
+| `UpcomingWorkout` | разделитель + название (`title-small`) + справа день (`eyebrow`, серый) + комментарий серым (`body-compact`) | «Дальше» в Large, тренировки недели в Extra large |
+| `EmptyState` | **Type**: empty («Плана пока нет») / signed-out («Войдите в аккаунт» + кнопка). По центру оставшегося места | неделя без плана, не вошёл |
 
-Не на компонентах: полоска с ячейкой «две тренировки» (единичный случай) и макеты тонированного / прозрачного режимов
-(имитация системы). Следующие: `FocusHeader`, `CoachComment`, `CoachNote`, `UpcomingWorkout`, `EmptyState`.
+Не на компонентах: полоска с ячейкой «две тренировки», шапка Small (кружок + «Сегодня»), строка «Без плана тренера»
+и макеты тонированного / прозрачного режимов (имитация системы).
 
 ## Тонированный и прозрачный режимы (iOS 18+ / 26+)
 
