@@ -202,9 +202,11 @@ SF Symbols, начертание Regular — одни и те же в макет
 |---|---|---|
 | `DayCell` | **Status**: done / missed / planned / rest × **Size**: L 30 / M 24 / S 22 (иконка 17 / 14 / 13). Вид спорта — вложенная иконка `icon/…`, на экземпляре меняется подменой компонента (swap). Цвета — токены `light.*`; в тёмной теме экземпляр переопределён токенами `dark.*` | полоска недели во всех размерах, кружок в Small |
 | `icon/…` | 16 иконок SF Symbols (см. «Иконки видов спорта») | внутри `DayCell` |
+| `WeekDay` | **Today**: no / yes (плашка `surface.secondary`, подпись `text.primary`) × **Size**: L / M. Внутри подпись дня (`widget/weekday`) и `DayCell` | внутри `WeekStrip` |
+| `WeekStrip` | **Size**: L (Large, Extra large) / M (Medium). 7 × `WeekDay` пн…вс, `space-between`. На экземпляре: у сегодняшнего дня Today = yes, у каждого `DayCell` — Status и иконка спорта | полоска недели во всех размерах, кроме Small |
 
-Не на компонентах: ячейка «две тренировки» (единичный случай) и макеты тонированного / прозрачного режимов (имитация системы).
-Следующие: `WeekStrip`, `FocusHeader`, `CoachComment`, `CoachNote`, `UpcomingWorkout`, `EmptyState`.
+Не на компонентах: полоска с ячейкой «две тренировки» (единичный случай) и макеты тонированного / прозрачного режимов
+(имитация системы). Следующие: `FocusHeader`, `CoachComment`, `CoachNote`, `UpcomingWorkout`, `EmptyState`.
 
 ## Тонированный и прозрачный режимы (iOS 18+ / 26+)
 
